@@ -17,6 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //Declare Imperial Weight and Height Var for BMI Calculator
+    CGFloat weight;
+    CGFloat height;
+    
+    //Set values for BMI calculation variables
+    weight = 185;
+    height = 71;
+    
+    //Declare BMI variable
+    CGFloat bodyMassIndex;
+    
+    //Set BMI variable to calculate
+    bodyMassIndex = (weight/(height*height))*703;
+    NSLog(@"The BMI for the indicated person is %f", bodyMassIndex);
     return YES;
 }
 
